@@ -7,11 +7,11 @@ docker build -t deiveris/multi-worker:latest -t deiveris/multi-worker:$SHA -f ./
 
 docker push deiveris/multi-client:latest
 docker push deiveris/multi-server:latest
-docker push deiveris/multi-woker:latest
+docker push deiveris/multi-worker:latest
 
 docker push deiveris/multi-client:$SHA
 docker push deiveris/multi-server:$SHA
-docker push deiveris/multi-woker:$SHA
+docker push deiveris/multi-worker:$SHA
 
 # Apply configrations
 kubectl apply -f k8s
